@@ -1,2 +1,8 @@
-package com.jeff_media.lightpermsx;public class PermissionValue {
+package com.jeff_media.lightpermsx;
+
+public enum PermissionValue {
+    UNSET,
+    GIVEN,
+    NEGATED;
+
 }

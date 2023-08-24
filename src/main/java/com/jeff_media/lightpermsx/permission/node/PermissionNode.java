@@ -1,27 +1,10 @@
-package com.jeff_media.lightpermsx;
+package com.jeff_media.lightpermsx.permission.node;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
-import lombok.extern.java.Log;
+import lombok.Data;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-/**
- * Thoughts:
- * chestsort.use:
- *   chestsort.use -> true
- *   chestsort.use.inventory -> false
- *   chestsort.use2 -> false
- * chestsort.*:
- *   chestsort.use -> true
- *   chestsort -> false
- *   chestsort. -> false
- *   chestsort.use.inventory -> true
- */
-@EqualsAndHashCode
-@Getter
-@ToString
+
+@Data
 public abstract class PermissionNode {
 
     @NotNull

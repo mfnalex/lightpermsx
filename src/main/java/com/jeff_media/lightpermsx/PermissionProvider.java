@@ -3,7 +3,7 @@ package com.jeff_media.lightpermsx;
 import net.milkbowl.vault.permission.Permission;
 
 
-public class PermissionProvider implements Permission {
+public class PermissionProvider extends Permission {
 
     private final LightPermsX plugin;
 
