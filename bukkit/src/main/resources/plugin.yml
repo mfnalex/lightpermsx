@@ -1,0 +1,3 @@
+name: LightPermsX
+main: com.jeff_media.lightpermsx.bukkit.LightPermsX
+version: ${version}
