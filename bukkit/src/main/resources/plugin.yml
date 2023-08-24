@@ -1,3 +1,3 @@
-name: LightPermsX
-main: com.jeff_media.lightpermsx.bukkit.LightPermsX
+name: LightPermsXBukkit
+main: com.jeff_media.lightpermsx.bukkit.LightPermsXBukkit
 version: ${version}

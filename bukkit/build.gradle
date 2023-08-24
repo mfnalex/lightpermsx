@@ -1,15 +1,18 @@
 plugins {
+    // Default java settings
     id 'lightpermsx.java'
+
+    // This module produces a shaded .jar plugin file
     id 'lightpermsx.shade-all'
 }
 
 repositories {
-    maven {
-        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
-    }
-    maven {
-        url = 'https://jitpack.io'
-    }
+    // for spigot-api
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    // for bungeecord-chat, a transitive dependency of spigot-api in old versions
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+    // for VaultAPI
+    maven { url = 'https://jitpack.io' }
 }
 
 dependencies {
@@ -18,9 +21,22 @@ dependencies {
     compileOnly "com.github.MilkBowl:VaultAPI:1.7"
 }
 
+// Expand ${version} in plugin.yml
 processResources {
     filteringCharset 'UTF-8'
     filesMatching('plugin.yml') {
         expand(['version': project.version])
     }
+}
+
+// Shaded .jar should be called "lightpermsx-bukkit.jar" instead of just "bukkit.jar"
+shadowJar {
+    archiveBaseName = 'lightpermsx-bukkit'
+}
+
+// Copy the shaded .jar to the test server
+tasks.register("exportToBukkitTestServer", Copy) {
+    dependsOn build
+    from shadowJar.archiveFile
+    into 'C:\\mctest\\plugins'
 }

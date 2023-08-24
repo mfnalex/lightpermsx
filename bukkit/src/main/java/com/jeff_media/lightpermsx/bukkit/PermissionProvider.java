@@ -5,15 +5,15 @@ import net.milkbowl.vault.permission.Permission;
 
 public class PermissionProvider extends Permission {
 
-    private final LightPermsX plugin;
+    private final LightPermsXBukkit plugin;
 
-    public PermissionProvider(LightPermsX plugin) {
+    public PermissionProvider(LightPermsXBukkit plugin) {
         this.plugin = plugin;
     }
 
     @Override
     public String getName() {
-        return "LightPermsX";
+        return "LightPermsXBukkit";
     }
 
     @Override

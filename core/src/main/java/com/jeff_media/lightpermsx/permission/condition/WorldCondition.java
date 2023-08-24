@@ -16,6 +16,6 @@ public class WorldCondition extends SimpleStringCondition {
 
     @Override
     public boolean isSatisified(@NotNull XPlayer player) {
-        return super.isSatisified(player.getWorldName());
+        return super.isSatisified(player.getWorld().getName());
     }
 }
