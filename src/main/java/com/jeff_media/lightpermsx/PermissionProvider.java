@@ -23,7 +23,7 @@ public class PermissionProvider extends Permission {
 
     @Override
     public boolean hasSuperPermsCompat() {
-        return false;
+        return true;
     }
 
     @Override
