@@ -1,13 +1,12 @@
 package com.jeff_media.lightpermsx.permission;
 
 import com.jeff_media.lightpermsx.permission.node.PermissionNode;
-import lombok.extern.java.Log;
 
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PermissionAssignmentList implements Permissible {
+public class PermissionAssignmentList implements IPermissible {
 
     private static final Comparator<Map.Entry<PermissionNode, PermissionState>> PERMISSION_ENTRY_COMPARATOR = Map.Entry.comparingByKey();
 

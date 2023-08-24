@@ -1,14 +1,19 @@
 package com.jeff_media.lightpermsx.bukkit;
 
+import com.jeff_media.lightpermsx.LightPermsX;
 import net.milkbowl.vault.permission.Permission;
+import org.bukkit.Bukkit;
+import org.bukkit.entity.Player;
 
 
-public class PermissionProvider extends Permission {
+public class VaultPermissionProvider extends Permission {
 
     private final LightPermsXBukkit plugin;
+    private final LightPermsX core;
 
-    public PermissionProvider(LightPermsXBukkit plugin) {
+    public VaultPermissionProvider(LightPermsXBukkit plugin, LightPermsX core) {
         this.plugin = plugin;
+        this.core = core;
     }
 
     @Override
@@ -27,7 +32,7 @@ public class PermissionProvider extends Permission {
     }
 
     @Override
-    public boolean playerHas(String world, String player, String permission) {
+    public boolean playerHas(String world, String name, String permission) {
         return false;
     }
 

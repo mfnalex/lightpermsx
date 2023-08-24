@@ -13,7 +13,7 @@ import org.bukkit.entity.Player;
 public class BukkitAdapter {
 
     XPlayer adapt(Player player) {
-        return new BukkitPlayer(player);
+        return new BukkitOnlinePlayer(player);
     }
 
     XWorld adapt(World world) {

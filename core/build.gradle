@@ -2,3 +2,7 @@ plugins {
     id 'lightpermsx.java'
     id 'lightpermsx.test'
 }
+
+dependencies {
+    testImplementation 'commons-io:commons-io:2.13.0'
+}

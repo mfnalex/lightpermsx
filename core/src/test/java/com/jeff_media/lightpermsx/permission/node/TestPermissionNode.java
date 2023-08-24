@@ -1,3 +1,5 @@
+package com.jeff_media.lightpermsx.permission.node;
+
 import com.jeff_media.lightpermsx.permission.node.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

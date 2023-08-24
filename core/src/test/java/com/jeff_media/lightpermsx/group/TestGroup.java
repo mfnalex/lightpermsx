@@ -1,3 +1,5 @@
+package com.jeff_media.lightpermsx.group;
+
 import com.jeff_media.lightpermsx.group.Group;
 import com.jeff_media.lightpermsx.permission.PermissionState;
 import org.junit.jupiter.api.Assertions;

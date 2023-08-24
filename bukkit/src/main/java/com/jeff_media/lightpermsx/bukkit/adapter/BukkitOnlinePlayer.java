@@ -7,11 +7,11 @@ import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
-public class BukkitPlayer extends XPlayer {
+public class BukkitOnlinePlayer extends XPlayer {
 
     private final Player player;
 
-    public BukkitPlayer(Player player) {
+    public BukkitOnlinePlayer(Player player) {
         this.player = player;
     }
 

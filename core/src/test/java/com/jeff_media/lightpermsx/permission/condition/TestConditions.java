@@ -1,3 +1,5 @@
+package com.jeff_media.lightpermsx.permission.condition;
+
 import com.jeff_media.lightpermsx.permission.condition.ConditionFactory;
 import com.jeff_media.lightpermsx.permission.condition.SimpleStringCondition;
 import org.junit.jupiter.api.Assertions;
