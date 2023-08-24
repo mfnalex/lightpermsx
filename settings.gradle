@@ -1,1 +1,3 @@
 rootProject.name = 'lightpermsx'
+include 'core'
+include 'bukkit'

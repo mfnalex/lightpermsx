@@ -1,0 +1,25 @@
+plugins {
+    id 'lightpermsx.java-conventions'
+}
+
+repositories {
+    maven {
+        url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/'
+    }
+    maven {
+        url = 'https://jitpack.io'
+    }
+}
+
+dependencies {
+    implementation project(':core')
+    compileOnly 'org.spigotmc:spigot-api:1.8.8-R0.1-SNAPSHOT'
+    compileOnly "com.github.MilkBowl:VaultAPI:1.7"
+}
+
+processResources {
+    filteringCharset 'UTF-8'
+    filesMatching('plugin.yml') {
+        expand(['version': project.version])
+    }
+}
