@@ -1,0 +1,11 @@
+plugins {
+    id 'com.github.johnrengelman.shadow'
+}
+
+build {
+    dependsOn shadowJar
+}
+
+shadowJar {
+    archiveClassifier = ''
+}
